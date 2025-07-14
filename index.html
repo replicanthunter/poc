@@ -1,59 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>poc</title>
-    <style>
-        html, body {
-            font-family: Arial, sans-serif;
-            background: url(Register\ -\ Login.gif) no-repeat center center fixed;
-            background-size: cover;
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            overflow: hidden;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Login – Demo Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f1f1;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
 
-        .content {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
-        }
+    .login-box {
+      background: white;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      width: 100%;
+      max-width: 400px;
+      position: relative;
+    }
 
-        h1 {
-            font-size: 36px;
-            margin: 0 0 20px 0;
-        }
+    .login-box h2 {
+      color: #c4302b;
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-        p {
-            font-size: 18px;
-            margin: 20px 0;
-        }
+    .input-field {
+      margin-bottom: 20px;
+    }
 
-        a {
-            color: aqua;
-            text-decoration: none;
-        }
+    .input-field input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
 
-        .gif {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-    </style>
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #c4302b;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: not-allowed;
+    }
+
+    .warning-box {
+      margin-top: 30px;
+      background: #fff3cd;
+      color: #856404;
+      padding: 15px;
+      border-left: 5px solid #ffc107;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .warning-box strong {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  </style>
 </head>
 <body>
-    <div class="content">
-        <h1>spikehntr</h1>
-        <p>You Hacked by <a href="https://x.com/spike_hntr">@spikehntr</a></p>
-        <img class="gif" src="https://64.media.tumblr.com/951a840830691640d70865934f8fd582/39aa1ba00b601fc9-bc/s400x600/fe8d6cc7a76c2f9b08d1f969d41157a0f4cf6cc2.gif" alt="Subdomain Takeover GIF">
+
+  <div class="login-box">
+    <h2>Sign in to YouTube</h2>
+
+    <div class="input-field">
+      <input type="text" placeholder="Email or phone" disabled />
     </div>
+
+    <div class="input-field">
+      <input type="password" placeholder="Password" disabled />
+    </div>
+
+    <button class="login-btn" disabled>Sign In</button>
+  </div>
+
+  <div class="warning-box">
+    <strong>⚠️ Demo Page – No Data Collected</strong>
+    This page is a visual-only proof-of-concept created for ethical security research. No inputs are collected, stored, or submitted. This is not a real login page.
+  </div>
+
 </body>
 </html>
